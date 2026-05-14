@@ -6,7 +6,7 @@ import ProductCard from '@/components/ProductCard';
 import Footer from '@/components/Footer';
 import { PRODUCTS } from '@/lib/data';
 
-const CATEGORIES = ['all','dark','milk','white','coffee','almond'];
+const CATEGORIES = ['all','salt','floral','matcha','herbal','vanilla','coffee','nuts'];
 const SORTS = [
   { label: 'Default', value: 'default' },
   { label: 'Price: Low → High', value: 'asc' },

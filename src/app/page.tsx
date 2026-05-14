@@ -107,12 +107,12 @@ export default function Home() {
       <section id="products" style={{ padding:'108px 64px', background:'var(--cream)' }}>
         <div className="reveal">
           <div style={S.lbl}>The Collection</div>
-          <h2 style={{ ...S.title, fontSize:'clamp(38px,5.5vw,68px)' }}>Nine <em style={{ fontStyle:'italic', color:'var(--cocoa)' }}>expressions</em><br />of chocolate</h2>
+          <h2 style={{ ...S.title, fontSize:'clamp(38px,5.5vw,68px)' }}>Seven <em style={{ fontStyle:'italic', color:'var(--cocoa)' }}>expressions</em><br />of chocolate</h2>
         </div>
         <div className="reveal" style={{ display:'inline-flex', border:'1px solid var(--parchment)', margin:'48px 0 56px' }}>
-          {['all','dark','milk','white','coffee','almond'].map(f => (
+          {['all','salt','floral','matcha','herbal','vanilla','coffee','nuts'].map(f => (
             <button key={f} onClick={() => setFilter(f)} style={{ padding:'13px 30px', border:'none', borderRight:'1px solid var(--parchment)', background: filter===f ? 'var(--cocoa-deep)' : 'transparent', fontFamily:"'Jost',sans-serif", fontSize:'10px', fontWeight:400, letterSpacing:'0.3em', textTransform:'uppercase', color: filter===f ? 'var(--cream)' : 'var(--text-light)', cursor:'pointer', transition:'all 0.2s' }}>
-              {f.charAt(0).toUpperCase()+f.slice(1)}
+              {f === 'all' ? 'All' : f === 'salt' ? 'Salt' : f === 'floral' ? 'Floral' : f === 'matcha' ? 'Matcha' : f === 'herbal' ? 'Herbal' : f === 'vanilla' ? 'Vanilla' : f === 'coffee' ? 'Coffee' : 'Nuts'}
             </button>
           ))}
         </div>

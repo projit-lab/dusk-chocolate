@@ -5,7 +5,7 @@ export interface Product {
   description: string;
   emoji: string;
   bg: string;
-  category: 'dark' | 'milk' | 'white' | 'coffee' | 'almond';
+  category: 'herbal' | 'floral' | 'matcha' | 'vanilla' | 'coffee' | 'nuts' | 'salt';
   basePrice: number;
   image: string;
   badge: string;
@@ -42,12 +42,12 @@ export const PRODUCTS: Product[] = [
   {
     id: 1,
     name: 'Himalayan Sea Salt',
-    ingredients: '75% Cocoa · Pink Salt · Ashwagandha · Honey',
+    ingredients: 'Cocoa · Pink Salt · Ashwagandha · Honey',
     description:
-      'Our flagship dark bar. A deep, mineral-rich 75% cocoa chocolate balanced by pink Himalayan salt and calming ashwagandha. The chocolate that started it all.',
+      'Our flagship bar. A deep, mineral-rich chocolate balanced by pink Himalayan salt and calming ashwagandha. The bar that started it all.',
     emoji: '🍫',
     bg: '#1A0800',
-    category: 'dark',
+    category: 'salt',
     basePrice: 110,
     image: '/images/himalayan-sea-salt.png',
     badge: 'Bestseller',
@@ -60,7 +60,7 @@ export const PRODUCTS: Product[] = [
       'Floral and warm. Organic cocoa infused with Damask rose and green cardamom — a sensory journey through a garden at twilight.',
     emoji: '🌸',
     bg: '#3A0E20',
-    category: 'dark',
+    category: 'floral',
     basePrice: 130,
     image: '/images/rose-cardamom.png',
     badge: 'Floral',
@@ -68,25 +68,25 @@ export const PRODUCTS: Product[] = [
   {
     id: 3,
     name: 'Zen Matcha',
-    ingredients: 'White Chocolate · Ceremonial Matcha · L-Theanine',
+    ingredients: 'Cocoa · Ceremonial Matcha · L-Theanine · Honey',
     description:
-      'Our most calming bar. Ceremonial-grade matcha meets creamy white chocolate, boosted with L-theanine for deep, focused calm.',
+      'Our most calming bar. Ceremonial-grade matcha woven through chocolate, boosted with L-theanine for deep, focused calm.',
     emoji: '🍵',
     bg: '#0E2A12',
-    category: 'white',
+    category: 'matcha',
     basePrice: 140,
     image: '/images/zen-matcha.png',
     badge: 'Calming',
   },
   {
     id: 4,
-    name: 'Holy Basil Dark',
-    ingredients: '65% Cocoa · Tulsi · Honey · Ashwagandha',
+    name: 'Holy Basil',
+    ingredients: 'Cocoa · Tulsi · Honey · Ashwagandha',
     description:
-      'Earthy and grounding. Tulsi meets 65% medium-dark cocoa for a bar that soothes anxiety and supports your body\'s natural rhythm.',
+      'Earthy and grounding. Tulsi meets rich cocoa for a bar that soothes anxiety and supports your body\'s natural rhythm.',
     emoji: '🌿',
     bg: '#0A2008',
-    category: 'dark',
+    category: 'herbal',
     basePrice: 115,
     image: '/images/holy-basil-dark.png',
     badge: 'Adaptogenic',
@@ -94,67 +94,41 @@ export const PRODUCTS: Product[] = [
   {
     id: 5,
     name: 'Smoked Vanilla',
-    ingredients: 'Milk Chocolate · Bourbon Vanilla · Smoked Salt',
+    ingredients: 'Cocoa · Bourbon Vanilla · Smoked Salt · Honey',
     description:
-      'Rich and indulgent. Our creamiest milk chocolate bar elevated with hand-scraped Bourbon vanilla and a whisper of smoked sea salt.',
+      'Rich and indulgent. Our most luxurious bar elevated with hand-scraped Bourbon vanilla and a whisper of smoked sea salt.',
     emoji: '✨',
     bg: '#2A1206',
-    category: 'milk',
+    category: 'vanilla',
     basePrice: 150,
     image: '/images/smoked-vanilla.png',
     badge: 'Indulgent',
   },
   {
     id: 6,
-    name: 'Golden Espresso',
-    ingredients: '70% Dark Chocolate · Arabica Coffee · Honey · Cinnamon',
+    name: 'Cocoa & Carafe',
+    ingredients: 'Cocoa · Cold Brew · Cacao Nibs · Honey',
     description:
-      'Wake up and savour. Single-origin Arabica woven into our 70% dark for a bar with presence, warmth, and a clean finish.',
+      'Deep and layered. Rich cocoa meets a slow-dripped carafe brew — dark cacao nibs add texture, honey rounds the finish. A bar with presence.',
     emoji: '☕',
     bg: '#120602',
     category: 'coffee',
     basePrice: 135,
-    image: '/images/golden-espresso.png',
-    badge: 'Energising',
+    image: '/images/cocoa-carafe.png',
+    badge: 'Bold',
   },
   {
     id: 7,
-    name: 'Midnight Coffee Bliss',
-    ingredients: 'Milk Chocolate · Cold Brew · Ashwagandha · Honey',
+    name: 'NutLuxe',
+    ingredients: 'Cocoa · Cashews · Almonds · Pistachios · Honey',
     description:
-      'The softer coffee bar. Cold brew folded into silky milk chocolate with ashwagandha to keep the energy gentle and sustained.',
-    emoji: '🌙',
-    bg: '#1E0A02',
-    category: 'coffee',
-    basePrice: 125,
-    image: '/images/midnight-coffee.png',
-    badge: 'Mellow',
-  },
-  {
-    id: 8,
-    name: 'Velvet Almond',
-    ingredients: 'Milk Chocolate · Roasted Almonds · Pink Salt · Honey',
-    description:
-      'Our most comforting bar. Whole roasted almonds in honey-sweetened milk chocolate — a familiar warmth that never gets old.',
+      'A celebration of premium roasted nuts. Whole cashews, almonds, and pistachios folded into honey-sweetened chocolate for an indulgent, textured experience.',
     emoji: '🥜',
     bg: '#2C1404',
-    category: 'almond',
-    basePrice: 120,
-    image: '/images/velvet-almond.png',
-    badge: 'Comforting',
-  },
-  {
-    id: 9,
-    name: 'Noir Almond',
-    ingredients: '72% Dark · Roasted Almonds · Ashwagandha · Smoked Salt',
-    description:
-      'Bold and sophisticated. Roasted almonds meet our darkest 72% cocoa, with ashwagandha and smoke for depth and drama.',
-    emoji: '🖤',
-    bg: '#080302',
-    category: 'almond',
-    basePrice: 130,
-    image: '/images/noir-almond.png',
-    badge: 'Bold',
+    category: 'nuts',
+    basePrice: 145,
+    image: '/images/nutluxe.png',
+    badge: 'Premium',
   },
 ];
 
@@ -183,11 +157,11 @@ export const GIFT_BOXES: GiftBox[] = [
     id: 'grand',
     name: 'The Grand Dusk',
     description:
-      'The full collection. All 9 flavours, fully customised. Presented in our signature matte gift box with a handwritten note.',
+      'The full collection. All 7 flavours, fully customised. Presented in our signature matte gift box with a handwritten note.',
     emoji: '👑',
-    bars: 9,
+    bars: 7,
     price: 899,
-    details: '9 bars · full collection',
+    details: '7 bars · full collection',
   },
 ];
 
