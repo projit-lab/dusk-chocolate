@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import ScrollRestorer from '@/components/ScrollRestorer';
 
 export const metadata: Metadata = {
   title: 'dusk. chocolates — Guilt-Free Artisanal Chocolate from Chennai',
@@ -22,7 +23,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <ScrollRestorer />
+        {children}
+      </body>
     </html>
   );
 }
+
